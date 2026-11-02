@@ -13,9 +13,9 @@ typedef struct _DEVELOPER_PROFILE {
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
     DEVELOPER_PROFILE me = {
         L"Hollow",
-        L"Analyst by day, Developer by night.",
+        L"-",
         { L"Cyber Security Student", },
-        { L"Analyst", L"Coder", L"Hacker" }
+        { L"Malware Analyst", L"Coder", L"Hacker" }
     };
 
     UNREFERENCED_PARAMETER(me);
