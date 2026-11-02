@@ -6,7 +6,7 @@
 typedef struct _DEVELOPER_PROFILE {
     LPCWSTR Name;
     LPCWSTR Bio;
-    LPCWSTR Roles[2];
+    LPCWSTR Roles[1];
     LPCWSTR Tags[3];
 } DEVELOPER_PROFILE;
 
