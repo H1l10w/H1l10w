@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hi, Hollow!
 
-<!--
-**H1l10w/H1l10w** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```cpp
+#include <windows.h>
 
-Here are some ideas to get you started:
+typedef struct _DEVELOPER_PROFILE {
+    LPCWSTR Name;
+    LPCWSTR Bio;
+    LPCWSTR Roles[2];
+    LPCWSTR Tags[3];
+} DEVELOPER_PROFILE;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
+    DEVELOPER_PROFILE me = {
+        L"Hollow",
+        L"Analyst by day, Developer by night.",
+        { L"Cyber Security Student", },
+        { L"Analyst", L"Coder", L"Hacker" }
+    };
+
+    UNREFERENCED_PARAMETER(me);
+    return 0;
+}
